@@ -4,7 +4,9 @@
   <xsl:decimal-format name="dformat" decimal-separator="." grouping-separator=","/>
 
   <xsl:include href="SurfaceCurrent.xsl"/>
-  <xsl:include href="select_arrow.xsl"/>
+  
+<!--  <xsl:include href="select_arrow.xsl"/>
+  <xsl:include href="current_multipoint.xsl"/> -->
   
   <!-- Not clear what the parameter INDEX_OF_TIMES is for -->
   <xsl:param name="INDEX_OF_TIMES" select ="0"/>

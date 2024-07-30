@@ -11,10 +11,6 @@
 .f0 {fill:none} /* no fill */
 .sCHBLK {stroke:#6B7F89} /*  sRGB line colour for all surface current arrow tokens */
 
-/*  No need to define a class for each band? The color token for each band is
- * specified in the lookup entry, and the day/night/dusk palettes in the color profile
- */
-
 .fSCBN1 {fill:#51379F} /* sRGB line colour for colour token STEP1: S111 Step 1 color */
 
 .fSCBN2 {fill:#14344C} /* sRGB line colour for colour token STEP2: S111 Step 2 color */
