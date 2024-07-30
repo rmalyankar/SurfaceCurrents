@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="https://staging.s100dev.net/schemas/S100/5.2.0/S100FC/20240515/S100_FC.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://schemas.s100dev.net/schemas/S100/5.2.0/S100FC/20240515/S100_FC.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <S100FC:S100_FC_FeatureCatalogue
         xmlns:S100FC="http://www.iho.int/S100FC/5.2"
         xmlns:S100Base="http://www.iho.int/S100Base/5.0"
