@@ -23,7 +23,7 @@
         <xsl:otherwise>0</xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
-    <xsl:variable name="scaleFloor"><xsl:value-of select="0.30"/></xsl:variable>
+    <xsl:variable name="scaleFloor"><xsl:value-of select="0.40"/></xsl:variable>
     <xsl:variable name="scaleCeiling"><xsl:value-of select="2.60"/></xsl:variable>
     <xsl:variable name="scaleFactorIntermediate"><xsl:value-of select="0.20"/></xsl:variable>
     <coverageInstruction>
@@ -42,6 +42,15 @@
       <coverageFill>
         <attributeCode>surfaceCurrentSpeed</attributeCode>
         <placement>directPosition</placement>
+        <!--
+          <lookup>
+          <label>SurfaceCurrentSpeedBandNoData</label>
+          <range>
+            <xsl:attribute name="upper">0.00</xsl:attribute>
+            <xsl:attribute name="closure">ltSemiInterval</xsl:attribute>
+          </range>
+        </lookup>
+        -->
         <lookup>
           <label>SurfaceCurrentSpeedBand1</label>
           <range>
@@ -73,10 +82,10 @@
           </symbol>
         </lookup>
         <lookup>
-          <label>SurfaceCurrentSpeedBand3A</label>
+          <label>SurfaceCurrentSpeedBand3</label>
           <range>
             <xsl:attribute name="lower">1.00</xsl:attribute>
-            <xsl:attribute name="upper">1.50</xsl:attribute>
+            <xsl:attribute name="upper">2.00</xsl:attribute>
             <xsl:attribute name="closure">geLtInterval</xsl:attribute>  
           </range>
           <symbol>
@@ -85,22 +94,6 @@
             <xsl:attribute name="defaultScaleFactor"><xsl:value-of select="$scaleFloor"/></xsl:attribute>
             <rotationAttribute>surfaceCurrentDirection</rotationAttribute>
             <rotationFactor>1.0</rotationFactor>
-          </symbol>
-        </lookup>
-        <lookup>
-          <label>SurfaceCurrentSpeedBand3B</label>
-          <range>
-            <xsl:attribute name="lower">1.50</xsl:attribute>
-            <xsl:attribute name="upper">2.00</xsl:attribute>
-            <xsl:attribute name="closure">geLtInterval</xsl:attribute>  
-          </range>
-          <symbol>
-            <xsl:attribute name="reference">SCAROW03</xsl:attribute>
-            <xsl:attribute name="rotationCRS">GeographicCRS</xsl:attribute>
-            <rotationAttribute>surfaceCurrentDirection</rotationAttribute>
-            <rotationFactor>1.0</rotationFactor>
-            <scaleAttribute>surfaceCurrentSpeed</scaleAttribute>
-            <scaleFactor><xsl:value-of select="$scaleFactorIntermediate"/></scaleFactor>
           </symbol>
         </lookup>
         <lookup>

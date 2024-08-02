@@ -11,7 +11,7 @@
         <S100FC:scope>Navigationally Significant Surface Current which may be used alone or as an auxiliary layer of data with an ENC.</S100FC:scope>
         <S100FC:fieldOfApplication>Marine navigation</S100FC:fieldOfApplication>
         <S100FC:versionNumber>2.0.0</S100FC:versionNumber>
-        <S100FC:versionDate>2024-05-13</S100FC:versionDate>
+        <S100FC:versionDate>2024-07-31</S100FC:versionDate>
         <S100FC:productId>S-111</S100FC:productId>
         <S100FC:producer>
                 <S100CI:role>owner</S100CI:role>
@@ -201,7 +201,7 @@
                         </S100FC:attributeBinding>
                         <S100FC:featureUseType>geographic</S100FC:featureUseType>
                         <S100FC:permittedPrimitives>coverage</S100FC:permittedPrimitives>
-                        <S100FC:permittedPrimitives>pointSet</S100FC:permittedPrimitives>
+                        
                 </S100FC:S100_FC_FeatureType>
         </S100FC:S100_FC_FeatureTypes>
 </S100FC:S100_FC_FeatureCatalogue>

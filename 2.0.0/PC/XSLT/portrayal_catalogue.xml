@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- 
+  Version 2.0.0 Build 20240801 Update of the S-111 Edition 1.0.0 PC for S-111 Edition 2.0.0
+    Updated by Raphael Malyankar (Portolan Sciences LLC)
+-->
 <pc:portrayalCatalog xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.2"
   xmlns:xsl="http://www.w3.org/2001/XMLSchema"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -222,17 +225,6 @@
         <language>eng</language>
       </description>
       <fileName>select_arrow.xsl</fileName>
-      <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
-      <ruleType>SubTemplate</ruleType>
-    </ruleFile>
-    <ruleFile id="4">
-      <description>
-        <name>current_multipoint</name>
-        <description>Surface Current DCF 1, 8 and 4?</description>
-        <language>eng</language>
-      </description>
-      <fileName>current_multipoint.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
